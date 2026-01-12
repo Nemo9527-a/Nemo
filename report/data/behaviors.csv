@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"7","LEDSetting v1.0","0","发送设备","0","0","获取详细版本","0"
+"7","LEDSetting v1.0","0","发送设备","0","0","查询所有发送器","0"
+"3","LEDSetting v2.0","0","websocket","0","0","查询已初始化客户端","0"

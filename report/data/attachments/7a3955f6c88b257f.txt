@@ -1,0 +1,4 @@
+INFO     root:conftest.py:21 --------------------------------------用例执行开始--------------------------------------
+INFO     root:websocket_util.py:30 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+ERROR    root:websocket_util.py:37 WebSocket 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+INFO     root:conftest.py:23 --------------------------------------用例执行结束--------------------------------------
