@@ -1,0 +1,717 @@
+[2025-03-12 09:29:47,792] - [conftest.py -->line:15] - INFO: ========================================测试开始========================================
+
+[2025-03-12 09:29:47,792] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:47,794] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-正常请求】接口测试用例
+[2025-03-12 09:29:47,794] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:47,794] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 09:29:48,207] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:48,220] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:48,221] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:48,221] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:48,249] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 09:29:48,270] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:48,273] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:48,275] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数不传】接口测试用例
+[2025-03-12 09:29:48,275] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:48,275] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {}}
+[2025-03-12 09:29:48,314] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:48,315] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:48,315] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:48,316] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:48,338] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:48,338] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 09:29:48,355] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:48,358] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:48,359] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数为空】接口测试用例
+[2025-03-12 09:29:48,359] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:48,359] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {}}
+[2025-03-12 09:29:48,420] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:48,420] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:48,421] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:48,421] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:48,430] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:48,430] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:48,430] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 09:29:48,442] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:48,444] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:48,445] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数错误】接口测试用例
+[2025-03-12 09:29:48,445] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:48,446] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {}}
+[2025-03-12 09:29:48,487] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:48,488] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:48,488] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:48,488] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:48,503] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:48,503] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:48,503] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:48,504] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 09:29:48,516] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:48,518] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:48,520] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数不传】接口测试用例
+[2025-03-12 09:29:48,520] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:48,520] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 09:29:49,034] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:49,035] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:49,035] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:49,035] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:49,058] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:49,059] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:49,059] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:49,060] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:49,060] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 09:29:49,077] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:49,079] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:49,080] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数为空】接口测试用例
+[2025-03-12 09:29:49,080] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:49,081] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 09:29:49,484] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:49,485] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:49,485] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:49,486] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:49,509] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:49,509] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:49,509] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:49,510] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:49,510] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 09:29:49,510] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 09:29:49,527] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:49,530] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:49,531] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数错误】接口测试用例
+[2025-03-12 09:29:49,531] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 09:29:49,531] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'a': '1234', 'b': 'abcd'}}
+[2025-03-12 09:29:49,927] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:49,927] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:49,928] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:49,928] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:49,953] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:49,954] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:49,954] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:49,954] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:49,954] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 09:29:49,955] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 09:29:49,955] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 09:29:49,971] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:49,973] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:49,974] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-正常请求】接口测试用例
+[2025-03-12 09:29:49,974] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:49,974] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/getDetailVersion', 'data': {'index': 0}}
+[2025-03-12 09:29:50,270] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/getDetailVersion","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:50,271] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:50,271] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:50,271] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:50,281] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 09:29:50,292] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:50,294] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:50,295] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数不传】接口测试用例
+[2025-03-12 09:29:50,295] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:50,296] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {'index': 0}}
+[2025-03-12 09:29:50,339] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:50,340] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:50,340] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:50,340] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:50,353] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:50,353] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 09:29:50,366] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:50,381] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:50,385] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数为空】接口测试用例
+[2025-03-12 09:29:50,385] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:50,385] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {'index': 0}}
+[2025-03-12 09:29:50,428] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:50,429] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:50,429] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:50,430] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:50,442] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:50,443] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:50,443] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 09:29:50,457] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:50,460] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:50,461] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数错误】接口测试用例
+[2025-03-12 09:29:50,461] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:50,461] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {'index': 0}}
+[2025-03-12 09:29:50,517] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 09:29:50,518] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:50,518] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 09:29:50,519] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 09:29:50,538] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:50,539] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:50,539] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:50,539] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 09:29:50,553] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:50,555] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:50,556] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数不传】接口测试用例
+[2025-03-12 09:29:50,557] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:50,557] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 09:29:50,954] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:50,954] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:50,955] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:50,955] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:50,979] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:50,979] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:50,979] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:50,980] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:50,980] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 09:29:50,996] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:50,998] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:50,999] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数为空】接口测试用例
+[2025-03-12 09:29:51,000] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:51,000] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 09:29:51,648] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:51,649] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:51,649] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:51,649] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:51,675] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:51,676] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:51,676] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:51,676] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:51,676] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 09:29:51,677] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 09:29:51,693] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:51,695] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:51,696] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数错误】接口测试用例
+[2025-03-12 09:29:51,697] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 09:29:51,697] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'index': 'abc'}}
+[2025-03-12 09:29:52,120] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 09:29:52,120] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 09:29:52,121] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 09:29:52,121] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 09:29:52,145] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:52,145] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:29:52,145] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 09:29:52,146] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 09:29:52,146] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 09:29:52,146] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 09:29:52,146] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 09:29:52,164] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:52,182] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:52,184] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 09:29:52,534] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 09:29:52,535] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-正常请求】接口测试用例
+[2025-03-12 09:29:52,535] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "/v2/WebSocket/getAllClientName"}
+[2025-03-12 09:29:52,536] - [websocket_util.py -->line:68] - INFO: 返回参数：{"command":"/v2/WebSocket/getAllClientName","data":{"names":["main","render"]}}
+[2025-03-12 09:29:52,537] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 09:29:52,537] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 09:29:52,538] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}, 实际: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}
+[2025-03-12 09:29:52,562] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 09:29:52,583] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:52,586] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:52,587] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 09:29:52,600] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 09:29:52,600] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数为空】接口测试用例
+[2025-03-12 09:29:52,600] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": ""}
+[2025-03-12 09:29:57,600] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 09:29:57,601] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 09:29:57,601] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 09:29:57,602] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 09:29:57,626] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:29:57,626] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 09:29:57,659] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:29:57,664] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 09:29:57,665] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 09:29:57,678] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 09:29:57,679] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数错误】接口测试用例
+[2025-03-12 09:29:57,680] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "123abc@中文"}
+[2025-03-12 09:30:02,681] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 09:30:02,682] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 09:30:02,682] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 09:30:02,683] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 09:30:02,707] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 09:30:02,707] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 09:30:02,708] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 09:30:02,735] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 09:30:02,736] - [conftest.py -->line:17] - INFO: ========================================测试结束========================================
+
+[2025-03-12 11:01:36,382] - [conftest.py -->line:15] - INFO: ========================================测试开始========================================
+
+[2025-03-12 11:01:36,382] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:36,384] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-正常请求】接口测试用例
+[2025-03-12 11:01:36,385] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:36,385] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:01:37,058] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:37,059] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:37,059] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:37,059] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:37,081] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:01:37,263] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:37,265] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:37,267] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数不传】接口测试用例
+[2025-03-12 11:01:37,267] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:37,267] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {}}
+[2025-03-12 11:01:37,304] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:37,305] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:37,306] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:37,306] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:37,318] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:37,318] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:01:37,359] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:37,360] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:37,363] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数为空】接口测试用例
+[2025-03-12 11:01:37,363] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:37,363] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {}}
+[2025-03-12 11:01:37,398] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:37,399] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:37,399] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:37,399] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:37,409] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:37,409] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:37,410] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:01:37,452] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:37,454] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:37,455] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数错误】接口测试用例
+[2025-03-12 11:01:37,456] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:37,456] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {}}
+[2025-03-12 11:01:37,491] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:37,492] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:37,492] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:37,492] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:37,500] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:37,501] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:37,501] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:37,501] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 11:01:37,541] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:37,543] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:37,545] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数不传】接口测试用例
+[2025-03-12 11:01:37,545] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:37,545] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 11:01:37,933] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:37,933] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:37,934] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:37,934] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:37,954] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:37,954] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:37,954] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:37,954] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:37,955] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 11:01:38,009] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:38,014] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:38,016] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数为空】接口测试用例
+[2025-03-12 11:01:38,016] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:38,017] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:01:38,622] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:38,623] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:38,623] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:38,624] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:38,646] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:38,647] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:38,647] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:38,647] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:38,647] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:01:38,648] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 11:01:38,694] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:38,696] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:38,697] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数错误】接口测试用例
+[2025-03-12 11:01:38,697] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:01:38,697] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'a': '1234', 'b': 'abcd'}}
+[2025-03-12 11:01:39,405] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:39,406] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:39,406] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:39,406] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:39,430] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:39,431] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:39,431] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:39,431] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:39,432] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:01:39,432] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 11:01:39,432] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 11:01:39,479] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:39,482] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:39,483] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-正常请求】接口测试用例
+[2025-03-12 11:01:39,483] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:39,484] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/getDetailVersion', 'data': {'index': 0}}
+[2025-03-12 11:01:39,520] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/getDetailVersion","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:39,521] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:39,521] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:39,522] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:39,538] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:01:39,583] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:39,585] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:39,586] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数不传】接口测试用例
+[2025-03-12 11:01:39,587] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:39,587] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {'index': 0}}
+[2025-03-12 11:01:39,641] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:39,641] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:39,641] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:39,641] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:39,650] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:39,650] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:01:39,689] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:39,704] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:39,708] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数为空】接口测试用例
+[2025-03-12 11:01:39,708] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:39,709] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {'index': 0}}
+[2025-03-12 11:01:39,749] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:39,749] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:39,750] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:39,750] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:39,759] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:39,760] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:39,760] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:01:39,813] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:39,815] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:39,816] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数错误】接口测试用例
+[2025-03-12 11:01:39,816] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:39,816] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {'index': 0}}
+[2025-03-12 11:01:39,851] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:01:39,852] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:39,852] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:01:39,852] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:01:39,860] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:39,860] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:39,861] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:39,861] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 11:01:39,900] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:39,902] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:39,904] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数不传】接口测试用例
+[2025-03-12 11:01:39,904] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:39,904] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 11:01:40,300] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:40,301] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:40,301] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:40,302] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:40,312] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:40,312] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:40,312] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:40,312] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:40,312] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 11:01:40,352] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:40,354] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:40,355] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数为空】接口测试用例
+[2025-03-12 11:01:40,355] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:40,355] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:01:40,986] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:40,987] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:40,987] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:40,988] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:41,008] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:41,008] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:41,008] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:41,008] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:41,009] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:01:41,009] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 11:01:41,052] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:41,054] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:41,056] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数错误】接口测试用例
+[2025-03-12 11:01:41,056] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:01:41,056] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'index': 'abc'}}
+[2025-03-12 11:01:41,449] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:01:41,451] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:01:41,451] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:01:41,452] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:01:41,469] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 11:01:41,470] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 11:01:41,516] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:41,518] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:41,520] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:01:41,865] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:01:41,866] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-正常请求】接口测试用例
+[2025-03-12 11:01:41,867] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "/v2/WebSocket/getAllClientName"}
+[2025-03-12 11:01:41,867] - [websocket_util.py -->line:68] - INFO: 返回参数：{"command":"/v2/WebSocket/getAllClientName","data":{"names":["main","render"]}}
+[2025-03-12 11:01:41,868] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:01:41,869] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:01:41,869] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}, 实际: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}
+[2025-03-12 11:01:41,893] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:01:41,948] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:41,950] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:41,952] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:01:41,963] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:01:41,963] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数为空】接口测试用例
+[2025-03-12 11:01:41,963] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": ""}
+[2025-03-12 11:01:46,964] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 11:01:46,965] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:01:46,965] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:01:46,965] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 11:01:46,977] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:46,977] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:01:47,023] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:47,026] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:01:47,027] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:01:47,040] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:01:47,041] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数错误】接口测试用例
+[2025-03-12 11:01:47,041] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "123abc@中文"}
+[2025-03-12 11:01:52,041] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 11:01:52,042] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:01:52,042] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:01:52,043] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 11:01:52,055] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:01:52,056] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:01:52,056] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:01:52,113] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:01:52,114] - [conftest.py -->line:17] - INFO: ========================================测试结束========================================
+
+[2025-03-12 11:02:12,202] - [conftest.py -->line:15] - INFO: ========================================测试开始========================================
+
+[2025-03-12 11:02:12,202] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:12,204] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-正常请求】接口测试用例
+[2025-03-12 11:02:12,205] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:12,205] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:02:12,586] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:12,587] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:12,587] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:12,587] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:12,598] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:02:12,611] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:12,627] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:12,631] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数不传】接口测试用例
+[2025-03-12 11:02:12,631] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:12,631] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {}}
+[2025-03-12 11:02:12,691] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:12,692] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:12,692] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:12,692] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:12,704] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:12,705] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:02:12,715] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:12,717] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:12,719] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数为空】接口测试用例
+[2025-03-12 11:02:12,719] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:12,719] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {}}
+[2025-03-12 11:02:12,772] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:12,772] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:12,772] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:12,772] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:12,781] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:12,781] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:12,781] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:02:12,791] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:12,793] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:12,794] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-command参数错误】接口测试用例
+[2025-03-12 11:02:12,795] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:12,795] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {}}
+[2025-03-12 11:02:12,843] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:12,843] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:12,844] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:12,844] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:12,857] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:12,857] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:12,857] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:12,858] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 11:02:12,869] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:12,872] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:12,873] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数不传】接口测试用例
+[2025-03-12 11:02:12,874] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:12,874] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 11:02:13,360] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:13,361] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:13,361] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:13,361] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:13,379] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:13,379] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:13,380] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:13,380] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:13,380] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 11:02:13,404] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:13,409] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:13,413] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数为空】接口测试用例
+[2025-03-12 11:02:13,414] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:13,414] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:02:13,811] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:13,811] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:13,812] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:13,812] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:13,822] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:13,822] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:13,822] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:13,823] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:13,823] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:02:13,823] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 11:02:13,833] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:13,835] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:13,836] - [request_util.py -->line:20] - INFO: 开始执行【查询所有发送器-data参数错误】接口测试用例
+[2025-03-12 11:02:13,836] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/searchAllDevice
+[2025-03-12 11:02:13,836] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'a': '1234', 'b': 'abcd'}}
+[2025-03-12 11:02:14,223] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:14,224] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:14,224] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:14,224] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 11:02:14,244] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 11:02:14,255] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:14,257] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:14,258] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-正常请求】接口测试用例
+[2025-03-12 11:02:14,258] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:14,258] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/getDetailVersion', 'data': {'index': 0}}
+[2025-03-12 11:02:14,562] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/getDetailVersion","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:14,563] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:14,563] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/getDetailVersion', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:14,563] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:14,571] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:02:14,583] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:14,585] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:14,586] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数不传】接口测试用例
+[2025-03-12 11:02:14,586] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:14,586] - [request_util.py -->line:29] - INFO: 请求参数：{'data': {'index': 0}}
+[2025-03-12 11:02:14,627] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:14,627] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:14,628] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:14,628] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:14,638] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:14,638] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:02:14,648] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:14,664] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:14,667] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数为空】接口测试用例
+[2025-03-12 11:02:14,668] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:14,668] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '', 'data': {'index': 0}}
+[2025-03-12 11:02:14,724] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:14,724] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:14,724] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:14,725] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:14,735] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:14,735] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:14,736] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:02:14,758] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:14,761] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:14,762] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-command参数错误】接口测试用例
+[2025-03-12 11:02:14,762] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:14,763] - [request_util.py -->line:29] - INFO: 请求参数：{'command': '123abc@中文', 'data': {'index': 0}}
+[2025-03-12 11:02:14,801] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20011,"command":"123abc@中文","data":{},"message":"Common_CommandError"}
+[2025-03-12 11:02:14,802] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:14,802] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}, 实际: {'code': 20011, 'command': '123abc@中文', 'data': {}, 'message': 'Common_CommandError'}
+[2025-03-12 11:02:14,803] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_CommandError, 实际: Common_CommandError
+[2025-03-12 11:02:14,819] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:14,819] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:14,819] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:14,820] - [excel_util.py -->line:96] - INFO: 第5行执行结果成功写入excel
+[2025-03-12 11:02:14,829] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:14,831] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:14,833] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数不传】接口测试用例
+[2025-03-12 11:02:14,833] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:14,833] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice'}
+[2025-03-12 11:02:15,227] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:15,227] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:15,227] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:15,228] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:15,240] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:15,240] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:15,240] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:15,240] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:15,241] - [excel_util.py -->line:96] - INFO: 第6行执行结果成功写入excel
+[2025-03-12 11:02:15,252] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:15,254] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:15,255] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数为空】接口测试用例
+[2025-03-12 11:02:15,255] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:15,255] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {}}
+[2025-03-12 11:02:15,644] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:15,644] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:15,644] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:15,644] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:02:15,655] - [excel_util.py -->line:96] - INFO: 第7行执行结果成功写入excel
+[2025-03-12 11:02:15,667] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:15,669] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:15,671] - [request_util.py -->line:20] - INFO: 开始执行【获取详细版本-data参数错误】接口测试用例
+[2025-03-12 11:02:15,671] - [request_util.py -->line:28] - INFO: 请求地址: http://127.0.0.1:8086/processor/getDetailVersion
+[2025-03-12 11:02:15,671] - [request_util.py -->line:29] - INFO: 请求参数：{'command': 'processor/searchAllDevice', 'data': {'index': 'abc'}}
+[2025-03-12 11:02:16,331] - [request_util.py -->line:31] - INFO: 返回参数：{"code":20400,"command":"processor/searchAllDevice","data":{},"message":"Common_DeviceInfoNotExist"}
+[2025-03-12 11:02:16,332] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 200, 实际: 200
+[2025-03-12 11:02:16,333] - [assert_util.py -->line:48] - INFO: 响应体断言成功！预期: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}, 实际: {'code': 20400, 'command': 'processor/searchAllDevice', 'data': {}, 'message': 'Common_DeviceInfoNotExist'}
+[2025-03-12 11:02:16,334] - [assert_util.py -->line:76] - INFO: 字段值断言成功！字段: message, 预期: Common_DeviceInfoNotExist, 实际: Common_DeviceInfoNotExist
+[2025-03-12 11:02:16,355] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:99] - INFO: 第4行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:99] - INFO: 第5行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:99] - INFO: 第6行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:99] - INFO: 第7行未找到匹配行!
+[2025-03-12 11:02:16,357] - [excel_util.py -->line:96] - INFO: 第8行执行结果成功写入excel
+[2025-03-12 11:02:16,373] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:16,377] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:16,378] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:02:16,390] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:02:16,390] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-正常请求】接口测试用例
+[2025-03-12 11:02:16,391] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "/v2/WebSocket/getAllClientName"}
+[2025-03-12 11:02:16,391] - [websocket_util.py -->line:68] - INFO: 返回参数：{"command":"/v2/WebSocket/getAllClientName","data":{"names":["main","render"]}}
+[2025-03-12 11:02:16,391] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:02:16,392] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:02:16,392] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}, 实际: {'command': '/v2/WebSocket/getAllClientName', 'data': {'names': ['main', 'render']}}
+[2025-03-12 11:02:16,404] - [excel_util.py -->line:96] - INFO: 第2行执行结果成功写入excel
+[2025-03-12 11:02:16,418] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:16,433] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:16,437] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:02:16,449] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:02:16,449] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数为空】接口测试用例
+[2025-03-12 11:02:16,450] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": ""}
+[2025-03-12 11:02:21,450] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 11:02:21,451] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:02:21,452] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:02:21,452] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 11:02:21,476] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:21,476] - [excel_util.py -->line:96] - INFO: 第3行执行结果成功写入excel
+[2025-03-12 11:02:21,494] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:21,496] - [conftest.py -->line:21] - INFO: --------------------------------------用例执行开始--------------------------------------
+[2025-03-12 11:02:21,498] - [websocket_util.py -->line:30] - INFO: 正在创建 WebSocket 连接: ws://127.0.0.1:8090/WebSocket
+[2025-03-12 11:02:21,799] - [websocket_util.py -->line:32] - INFO: WebSocket 连接成功！
+[2025-03-12 11:02:21,800] - [websocket_util.py -->line:59] - INFO: 开始执行【查询已初始化客户端-command参数错误】接口测试用例
+[2025-03-12 11:02:21,801] - [websocket_util.py -->line:65] - INFO: 请求参数：{"command": "123abc@中文"}
+[2025-03-12 11:02:26,801] - [websocket_util.py -->line:71] - ERROR: 请求超时: Connection timed out
+[2025-03-12 11:02:26,802] - [websocket_util.py -->line:47] - INFO: WebSocket 连接已关闭！
+[2025-03-12 11:02:26,803] - [assert_util.py -->line:24] - INFO: 状态码断言成功！预期: 101, 实际: 101
+[2025-03-12 11:02:26,803] - [assert_util.py -->line:43] - INFO: 响应体断言成功！预期: Connection timed out, 实际: Connection timed out
+[2025-03-12 11:02:26,828] - [excel_util.py -->line:99] - INFO: 第2行未找到匹配行!
+[2025-03-12 11:02:26,828] - [excel_util.py -->line:99] - INFO: 第3行未找到匹配行!
+[2025-03-12 11:02:26,829] - [excel_util.py -->line:96] - INFO: 第4行执行结果成功写入excel
+[2025-03-12 11:02:26,847] - [conftest.py -->line:23] - INFO: --------------------------------------用例执行结束--------------------------------------
+
+[2025-03-12 11:02:26,847] - [conftest.py -->line:17] - INFO: ========================================测试结束========================================
+
